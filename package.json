@@ -1,0 +1,23 @@
+{
+  "name": "explicalo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon",
+    "tailwindcss": "npx tailwindcss -i ./public/styles.css -o ./public/output.css --watch",
+    "dev": "concurrently \"npm run nodemon\" \"npm run tailwindcss\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "tailwindcss": "^3.4.3"
+  }
+}
