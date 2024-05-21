@@ -50,7 +50,23 @@
         </div>
 
         <div class="max-w-4xl mx-auto p-10 mt-10 round rounded-xl bg-custom-blue-base">
-            <form action="/next" class="grid grid-cols-2 " method="post">
+            <form action="/next" class="sm:grid sm:grid-cols-2 " method="post">
+                <div class="flex flex-col justify-start p-2">
+                    <label for="name" class="text-primary font-bold">Ingresa tu nombre: </label>
+                    <input class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px]" type="text">
+                </div>
+                <div class="flex flex-col justify-start items-start p-2">
+                    <label for="miSelect" class="text-primary font-bold">Categoria: </label>
+                    <select id="miSelect" name="miSelect" class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px]" type="text">
+                        <option value="invalid">Elige una categoría</option>
+                        <option value="tech">Tech</option>
+                        <option value="lifestyle">Estilo de vida</option>
+                        <option value="negocios">Negocios</option>
+                        <option value="educacion">Educación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
                 <div class="flex flex-col justify-start items-start p-2">
                     <label for="name" class="text-primary font-bold">Ingresa tu nombre: </label>
                     <input class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px]" type="text">
