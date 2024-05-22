@@ -12,3 +12,19 @@ const mobileMenu = document.getElementById('mobile-menu')
     mobileBtn.addEventListener('click', () => {
         slideToggle(mobileMenu);
     })
+
+const textIntro = document.getElementById('textIntro');
+const textContent = document.getElementById('textContent');
+
+textIntro.addEventListener('input', function() {
+      this.style.height = 'auto';
+      this.style.height = `${this.scrollHeight}px`;
+    });
+
+textContent.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = `${this.scrollHeight}px`
+});
+
+
+

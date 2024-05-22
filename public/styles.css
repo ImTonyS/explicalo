@@ -7,3 +7,10 @@
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
+
+.textIntro {
+    resize: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-height: calc(3em + 25px);
+}
