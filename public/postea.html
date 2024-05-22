@@ -45,19 +45,19 @@
     <section class="mt-10">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-2xl text-center font-semibold">sé el autor, y <span class="text-custom-blue">ayuda</span> a los demás.</h2>
-            <h1 class=" mt-8 sm:mt-4 text-xl text-white text-center sm:text-left font-medium bg-custom-blue p-3 px-10  rounded-full font-bold">empieza por aqui: </h1>
+            <h1 class=" mt-8 sm:mt-4 text-xl text-white text-center sm:text-left font-medium bg-custom-blue p-3 px-10  rounded-full font-bold shadow-md">empieza por aqui: </h1>
             
         </div>
 
-        <div class="max-w-4xl mx-auto p-10 mt-10 round rounded-xl bg-custom-blue-base">
+        <div class="max-w-4xl mx-auto p-10 mt-10 round rounded-xl">
             <form action="/next" class="sm:grid sm:grid-cols-2 " method="post">
                 <div class="flex flex-col justify-start p-2">
                     <label for="name" class="text-primary font-bold">ingresa tu nombre: </label>
-                    <input class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px]" type="text" required>
+                    <input class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px] shadow-md rounded-lg" type="text" required>
                 </div>
                 <div class="flex flex-col justify-start items-start p-2">
                     <label for="miSelect" class="text-primary font-bold">categoría: </label>
-                    <select id="miSelect" name="miSelect" class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px]" type="text" required >
+                    <select id="miSelect" name="miSelect" class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px] shadow-md rounded-lg" type="text" required >
                         <option value="invalid">Elige una categoría</option>
                         <option value="tech">Tech</option>
                         <option value="lifestyle">Estilo de vida</option>
@@ -69,20 +69,20 @@
 
                 <div class="flex flex-col justify-start p-2 sm:col-span-2 sm:mx-auto sm:w-5/6">
                     <label for="name" class="text-primary font-bold">titulo de tu post: <span class="text-sm">(algo que defina bien de que hablarás) </span> </label>
-                    <input class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px]" type="text" required>
+                    <input class="mt-2 w-5/6 sm:w-5/6 p-2 border border-primary border-[3px] shadow-md rounded-lg" type="text" required>
                 </div>
 
                 <div class="flex flex-col justify-start p-2 sm:col-span-2 sm:mx-auto sm:w-5/6">
                     <label for="name" class="text-primary font-bold">intro: <span class="text-sm"> </span> </label>
-                    <textarea id="textIntro" rows="1" class="textIntro mt-2 w-5/6 sm:w-5/6 border border-primary p-2 border-[3px]"></textarea>
+                    <textarea id="textIntro" rows="1" class=" shadow-md rounded-lg textIntro mt-2 w-5/6 sm:w-5/6 border border-primary p-2 border-[3px]"></textarea>
                 </div>
 
                 <div class="flex flex-col justify-start p-2 sm:col-span-2 sm:mx-auto sm:w-5/6">
                     <label for="name" class="text-primary font-bold">contenido: <span class="text-sm"> </span> </label>
-                    <textarea id="textContent" rows="1" class="textIntro mt-2 w-5/6 sm:w-5/6 border border-primary p-2 border-[3px]"></textarea>
+                    <textarea id="textContent" rows="1" class="shadow-md rounded-lg textIntro mt-2 w-5/6 sm:w-5/6 border border-primary p-2 border-[3px]"></textarea>
                 </div>
 
-                <button type="submit" class="bg-white text-primary p-2 mx-auto w-2/6 sm:1/6 mt-10 border border-primary border-[4px] font-bold hover:bg-primary hover:text-white sm:col-span-2 ">LISTO</button>
+                <button type="submit" class="flex justify-center shadow-md border border-2xl border-primary bg-white text-primary p-2 mx-auto w-2/6 sm:1/6 mt-10 font-bold hover:bg-primary hover:text-white sm:col-span-2 ">LISTO</button>
             </form>
         </div>
     </section>

@@ -2,11 +2,11 @@
   "name": "explicalo",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./src/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon",
+    "nodemon": "nodemon --ignore db.json",
     "tailwindcss": "npx tailwindcss -i ./public/styles.css -o ./public/output.css --watch",
     "dev": "concurrently \"npm run nodemon\" \"npm run tailwindcss\""
   },
