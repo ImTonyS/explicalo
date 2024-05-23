@@ -34,8 +34,6 @@ export const getTask = (req, res) => {
         if(!task) return res.sendStatus(404)
         res.json(task)
 }
-
-
 export const updateTask = async (req, res) => {
     const db = getConnection();
     const taskFound = db.data.tasks.find(task => task.id === req.params.id);
@@ -50,8 +48,6 @@ export const updateTask = async (req, res) => {
 
     res.json(`Task: ${taskFound.id} has been replaced`)
 }   
-
-
 export const deleteTask = async (req, res) => {
     const db = getConnection();
     const task = db.data.tasks.find(task => task.id === req.params.id);
