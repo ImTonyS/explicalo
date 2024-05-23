@@ -29,19 +29,44 @@ export const createTask = async (req, res) => {
 
 
 export const getTask = (req, res) => {
-    
         const db = getConnection();
         const task = db.data.tasks.find(task => task.id === req.params.id);
         if(!task) return res.sendStatus(404)
         res.json(task)
+}
+
+
+export const updateTask = async (req, res) => {
+    const db = getConnection();
+    const taskFound = db.data.tasks.find(task => task.id === req.params.id);
+    if (!taskFound) return res.sendStatus(500);
+
+    taskFound.name = req.body.name;
+    taskFound.description = req.body.description;
+
+    db.data.tasks.map(task => task.id === req.params.id ? taskFound : task);
+
+    await db.write()
+
+    res.json(`Task: ${taskFound.id} has been replaced`)
+}   
+
+
+export const deleteTask = async (req, res) => {
+    const db = getConnection();
+    const task = db.data.tasks.find(task => task.id === req.params.id);
+    if(!task) return res.sendStatus(404);
+
+    const newTask = db.data.tasks.filter(task => task.id !== req.params.id);
+    db.data.tasks = newTask;
+    
+    await db.write();
+
+    res.json(`Task ${task.id} ha sido eliminado`)
 
 }
-export const updateTask = (req, res) => {
-    res.send("updating task");
-}
-export const deleteTask = (req, res) => {
-    res.send("deleting task");
-}
 export const count = (req, res) => {
-    res.send("counting tasks");
+    const db = getConnection();
+    const array = db.data.tasks.length;
+    res.json(array)
 }
