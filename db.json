@@ -1,19 +1,28 @@
 {
-  "tasks": [
+  "posts": [
     {
-      "id": "88c632ff-c2cf-4656-815a-d4249fe00ebe",
-      "name": "hola",
-      "description": "adios"
+      "id": "b5a742f9-850f-453e-a2cc-2ec589e737ee",
+      "autor": "Antonio Villaverde",
+      "categoria": "lifestyle",
+      "titulo": "Pisar sin miedo",
+      "intro": "Pisar sin miedo ha sido uno de mis mas grandes aciertos",
+      "contenido": "Lo logramos"
     },
     {
-      "id": "9be6f6db-dee1-415d-9609-8def092c8a2d",
-      "name": "tengo que crear una web",
-      "description": "guardando datos en la base de datos"
+      "id": "269e864e-2553-4aea-a517-a4955f12a80b",
+      "autor": "Eduardo Villaverde",
+      "categoria": "educacion",
+      "titulo": "Matematicas ",
+      "intro": "Explico un poco sobre matematicas",
+      "contenido": "yeah"
     },
     {
-      "id": "3811c6a0-f6dc-484f-84ba-61465ad86f34",
-      "name": "tengo que crear una web",
-      "description": "guardando datos en la base de datos"
+      "id": "76014b28-01ef-4a35-a15f-e9c0d7fd8b1a",
+      "autor": "Antonio Villaverde",
+      "categoria": "invalid",
+      "titulo": "Primer post ",
+      "intro": "Este es el primer post y estoy muy emocionado",
+      "contenido": "Yeah, se logro"
     }
   ]
 }

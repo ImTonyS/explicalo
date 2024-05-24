@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "nodemon": "nodemon --ignore db.json",
-    "tailwindcss": "npx tailwindcss -i ./public/styles.css -o ./public/output.css --watch",
+    "tailwindcss": "npx tailwindcss -i ./src/public/styles.css -o ./src/public/output.css --watch",
     "dev": "concurrently \"npm run nodemon\" \"npm run tailwindcss\""
   },
   "keywords": [],

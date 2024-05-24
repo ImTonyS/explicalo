@@ -10,14 +10,15 @@ let db;
 export async function createConnection() {
     const file = join(__dirname, '../db.json')
     const adapter = new JSONFile(file);
-    db = new Low(adapter, {tasks: [] });
+    db = new Low(adapter, {posts: [] });
 
     await db.read();
 
-    db.data ||= {tasks: []}
+    db.data ||= {posts: []}
 
     await db.write();
     
 }
 
 export const getConnection = () => db;
+export default __dirname;
